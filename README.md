@@ -136,13 +136,18 @@ A simple guide for converting a PS4 into a Computer running Linux
 
 ---
 
-## Post Install Guide (contains other useful tips too)
-- Link: https://dionkill.github.io/ps4-linux-tutorial/postinstall.html
+## *Post Install Guide & Very Important Resource*
+- https://dionkill.github.io/ps4-linux-tutorial/postinstall.html
 
-## Common Issue - Bluetooth not working fix
+## Bluetooth not working Common Issue Fix
 - Open Terminal / Konsole then type:
-``
-install bluez-obex
-sudo systemctl start bluetooth
-sudo systemctl enable bluetooth
-``
+  - `install bluez-obex`
+  - `sudo systemctl start bluetooth`
+  - `sudo systemctl enable bluetooth`
+
+## To delete Linux from PS4 and free up space
+- Open PS4 Xplorer 2.0
+- You are by default inside the `root` directory / folder
+- Enter `user` directory
+- Enter `home` directory
+- Delete `linux.img` (This will wipe everything stored on Linux)
