@@ -48,7 +48,7 @@ A simple guide for converting a PS4 into a Computer running Linux
 
 ## **Step 5: Download Linux payloads**
 - Download all payloads to try out or just one if you know your needs (512mb is enough for non-gaming workflows)
-- Use at max the 1024mb Linux payload when booting Linux for the first time
+- **Must use** the 1024mb Linux payload or smaller when booting Linux for the first time
 - Sources:
   - This Repository [linux-512mb.bin](https://github.com/kassem404/PS4-to-Computer-Conversion/blob/main/linux-512mb.bin)
   - [GitHub](https://github.com/ArabPixel/ps4-linux-payloads/releases) ***Must use .elf files & rename to .bin***
@@ -116,8 +116,15 @@ A simple guide for converting a PS4 into a Computer running Linux
 ---
 
 ## **Step 11: Load the Linux Loader**
+- Unplug any USB devices connected to the PS4
 - Open Payload Guest App
-
+- Choose the 512mb Linux payload
+- Wait for the loader to initialize (screen may go black for a few minutes)
+- The PS4's LED strip should be blue with white pulses for a successful boot. If the LED is only white, the boot failed. Force shutdown by holding the power button for about 10 seconds and try again.
+- If you switch between monitor sources and / or lose video signal / display, simply press **Ctrl+Alt+F2** and then **Ctrl+Alt+F7** or **Ctrl+Alt+F1** (depends on which TTY your GUI is located in) to regain display.
+- Plug in USB keyboard once the Linux shell is visible (displays `rescueshell / #`)
+- Type the command `install-linux-hdd.sh`
+- 
 
 ## XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -125,23 +132,10 @@ A simple guide for converting a PS4 into a Computer running Linux
 ## **Step 5: Load the Linux Loader**
 **Objective:** Boot the Linux loader from the PS4.
 
-2. Select the Linux loader payload (e.g., `ps4-linux-loader.bin`).
 3. Wait for the loader to initialize (screen may go black for a few minutes).
 4. If the screen remains black, try pressing **CTRL+ALT+F1**, **CTRL+ALT+F2**, or **CTRL+ALT+F7** until the Linux console appears.
 5. Touch grass during the installation process which might take an hour or a bit more (less time with internal SSD).
 
----
-
-## **Step 6: Install Linux to Internal Disk**
-**Objective:** Install Linux on the PS4’s internal storage.
-
-1. Follow the on-screen prompts to start the installation.
-2. Select the internal disk (usually `/dev/sda` or `/dev/sdb`).
-   **⚠️ Warning:** This will **erase all data** on the selected disk.
-3. Proceed with the installation (may take **1-2 hours**).
-4. Set up a user account and password when prompted.
-
----
 ---
 
 ## **Step 7: First Boot and Configuration**
