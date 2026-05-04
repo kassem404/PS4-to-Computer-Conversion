@@ -139,6 +139,8 @@ A simple guide for converting a PS4 into a Computer running Linux
 ## *Post Install Guide & Very Important Resource*
 - https://dionkill.github.io/ps4-linux-tutorial/postinstall.html
 
+---
+
 ## Bluetooth not working Common Issue Fix
 - Open Terminal / Konsole then type:
   - `install bluez-obex`
@@ -151,3 +153,6 @@ A simple guide for converting a PS4 into a Computer running Linux
 - Enter `user` directory
 - Enter `home` directory
 - Delete `linux.img` (This will wipe everything stored on Linux)
+
+## Benchmarks
+- [GitHub](https://github.com/kassem404/PS4-to-Computer-Conversion/blob/main/BENCHMARKS.md)
