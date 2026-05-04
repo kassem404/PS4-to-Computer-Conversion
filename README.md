@@ -16,15 +16,22 @@ A simple guide for converting a PS4 into a Computer running Linux
 
 ---
 
-## **Step 2: Note down Software & Southbridge versions**
-- Found in PS4 Settings -> System -> System Information
-- Software version used: 11.52
+## **Step 2: Set up PS4 Settings**
+- Go to `PS4 Settings` -> `Sound & Screen`
+- Turn off `System Music` and `Ket Tone`
+- Go to `Video Resolution Output`
+- Set `Screen Resolution` to `1080p`
+- Set `RGB Range` to `Full`
+- Set `HDR` to `Off`
+- Set `Deep Colour Output` to `Off` (if available)
+- Go to `PS4 Settings` -> `System` -> `System Information`
+- Write down the Southbridge type on notes app or paper
 - Southbridge used: Aeolia
 
 ---
 
-## **Step 3: Enable Goldhen Server Settings**
-- Found in Goldhen Settings -> Server Settings
+## **Step 3: Set up Goldhen Settings**
+- Go to `Goldhen` -> `Server Settings`
   - Enable FTP Server
   - Enable BinLoader Server
 
@@ -35,7 +42,7 @@ A simple guide for converting a PS4 into a Computer running Linux
   - Homebrew Store App on Jailbroken PS4 (if installed)
   - [Payload Guest App](https://pkg-zone.com/details/AZIF00003)
   - [PS4 Xplorer 2.0 App](https://pkg-zone.com/details/LAPY20009)
-- If installing from a computer; copy the file to a USB then plug it in the PS4 and open Goldhen -> Debug Settings -> Package Source -> Choose All -> Package Installer -> Install the Apps
+- If installing from a computer; copy the file to a USB then plug it in the PS4 and open `Goldhen` -> `Debug Settings` -> `Package Source` -> `Choose All` -> `Package Installer` -> `Install the Apps`
 
 ---
 
@@ -66,6 +73,9 @@ A simple guide for converting a PS4 into a Computer running Linux
 
 ## **Step 8: Download Linux distro**
 - **Must rename file** to psxitarch.tar.xz / psxitarch.tar.gz depending on extension
+- Distro publisher posts the username and password of the distro.
+- Username used: qba
+- Password used: loki
 - Sources:
   - [MEGA](https://mega.nz/file/RyUVQARB#HZD49XXac_v2CYKD4Oqa7Tg1aiZ7ltH_cnDxixw9JjY)
   - [MegaUp](https://megaup.net/fadf9049f4e189a2f7961eeb2587b793/cachyos_final_fantasy_v2.tar.xz)
@@ -100,8 +110,14 @@ A simple guide for converting a PS4 into a Computer running Linux
 - Copy kernel bzImage, follow this path: `root` -> `data` -> `linux` -> `boot`, paste
 - Go back to `usb0` for copying
 - Copy Linux distro, follow this path: `root` -> `user` -> `system` -> `boot`, paste
+- Close the App
+- Unplug USB drive
 
 ---
+
+## **Step 11: Load the Linux Loader**
+- Open Payload Guest App
+
 
 ## XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -109,7 +125,6 @@ A simple guide for converting a PS4 into a Computer running Linux
 ## **Step 5: Load the Linux Loader**
 **Objective:** Boot the Linux loader from the PS4.
 
-1. Open the **Payload Guest App** on your PS4.
 2. Select the Linux loader payload (e.g., `ps4-linux-loader.bin`).
 3. Wait for the loader to initialize (screen may go black for a few minutes).
 4. If the screen remains black, try pressing **CTRL+ALT+F1**, **CTRL+ALT+F2**, or **CTRL+ALT+F7** until the Linux console appears.
