@@ -64,19 +64,31 @@ A simple guide for converting a PS4 into a Computer running Linux
 
 ---
 
-## **Step 8: Creating directories**
-- Open PS4 Xplorer 2.0 A
+## **Step 8: Download Linux distro**
+- **Must rename file** to psxitarch.tar.xz / psxitarch.tar.gz depending on extension
+- Sources:
+  - [MEGA](https://mega.nz/file/RyUVQARB#HZD49XXac_v2CYKD4Oqa7Tg1aiZ7ltH_cnDxixw9JjY)
+  - [MegaUp](https://megaup.net/fadf9049f4e189a2f7961eeb2587b793/cachyos_final_fantasy_v2.tar.xz)
+
+---
+
+## **Step 9: Creating directories**
+- Open PS4 Xplorer 2.0
 - You are by default in the `root` directory / folder
 - Enter `data` directory
 - Create a new directory called `payloads` (if it does not exist)
-- Go back
-- Create a new directory called `linux`
-- Enter `linux` directory
+- Go back to `root` directory
+- Create a new directory called `linux` then enter it
 - Create a new directory called `boot` inside `linux`
-- Go back
+- Go back to `root` directory
 - Enter `user` directory
 - Enter `system` directory
 - Create a new directory called `boot` inside `system`
+
+---
+
+## **Step 10: Copying files from USB drive**
+- Open PS4 Xplorer 2.0
 
 
 ## XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
