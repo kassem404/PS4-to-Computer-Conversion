@@ -40,39 +40,33 @@ A simple guide for converting a PS4 into a Computer running Linux
 ---
 
 ## **Step 5: Download Linux Payloads**
-- Download all payloads or just one (if you know what you want)
-- Use the 1024mb payload or smaller when booting Linux for the first time only
+- Download all payloads to try out or just one if you know your needs (512mb is enough for non-gaming workflows)
+- Use at max the 1024mb Linux payload when booting Linux for the first time
 - Sources:
+  - This Repository [linux-512mb.bin](https://github.com/kassem404/PS4-to-Computer-Conversion/blob/main/linux-512mb.bin)
   - [GitHub](https://github.com/ArabPixel/ps4-linux-payloads/releases) ***Must use .elf files & rename to .bin***
 
 ---
 
 ## **Step 6: Open PS4 Xplorer 2.0 App**
-- Enter into `data` directory
+- Enter `mnt` directory
+- Find your `usb` files
+- Select and copy the Linux payloads
+- Go back
+- Enter `data` directory
+- Create a folder named `payloads` if it does not exist
+- Paste the Linux payloads into `payloads` folder
 
 ---
 
-### **Option 1: Using FileZilla (Recommended)**
-1. Download and install [FileZilla](https://filezilla-project.org/download.php) on your PC.
-2. Connect to your PS4 using the IP address displayed by the Payload Guest App (usually `192.168.x.x:21`).
-   - Username: `anonymous`
-   - Password: (leave blank or use `anonymous`)
-3. Navigate to `/user/` on the PS4.
-4. Upload the Linux image and loader files to this directory.
+### **Step 7: Download kernel image**
+- Kernel bzImage used: 5.15.15-obsidianx-1.0.0_release
+- Source:
+  - [GitHub](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.15.15__1.0.0)
 
-### **Option 2: Using USB/HDD/SSD (Alternative)**
-1. Format a USB drive as **exFAT** or **FAT32**.
-2. Copy the Linux image and loader files to the root of the USB.
-3. Insert the USB into the PS4.
-4. Use [PS4 Xplorer](https://pkg-zone.com/details/LAPY20009) to copy the files to `/user/`.
-
----
-**Note:**
 - Installation may take **1 hour or more** (less time with an internal SSD).
 - If nothing is displayed, try pressing **CTRL+ALT+F1**, **CTRL+ALT+F2**, or **CTRL+ALT+F7** repeatedly.
 
----
----
 
 ## **Step 4: Prepare the Linux Image**
 **Objective:** Download a compatible Linux distribution for PS4.
