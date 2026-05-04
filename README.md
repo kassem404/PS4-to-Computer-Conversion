@@ -12,7 +12,7 @@ A simple guide for converting a PS4 into a Computer running Linux.
 - Use any jailbreak method compatible with your PS4 firmware.
 - **Payload:** **Goldhen v2.4b18.7** or lower (Newer versions may cause issues with Linux)
 - **Sources:**
-  - This Repository (payload.bin)
+  - This Repository - payload.bin
   - [GoldHEN GitHub](https://github.com/GoldHEN/GoldHEN/releases/tag/2.4b17.3)
   - [Ko-fi (GoldHEN)](https://ko-fi.com/s/5d29f9e29c)
 
