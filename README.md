@@ -1,16 +1,15 @@
 # PS4-to-Computer-Conversion
 A simple guide for converting a PS4 into a Computer running Linux.
 
-This guide is for all PS4 Launch Edition/Fat models including:
-CUH-10xxA series, CUH-11xxA series, CUH-11xxB series, CUH-12xxA series, CUH-12xxB series
-
-Model used: CUH-1116A (Found on the bottom of the PS4)
+- This guide is for all PS4 Launch Edition (PS4 Fat) models namely: CUH-10xxA / CUH-11xxA / CUH-11xxB / CUH-12xxA / CUH-12xxB series.
+- Model used: CUH-1116A (Found on the bottom of the PS4)
+- This guide uses the **internal drive method**, which installs Linux into the PS4's main drive. The PS4's operating system will not be deleted but will be configured to dual-boot Linux.
 
 ## **Step 1: Jailbreak the PS4**
 **Objective:** Gain access to install custom software.
 
 - **Method:** Use any jailbreak method compatible with your PS4 firmware.
-- **Payload:** **Goldhen v2.4b18.7** (Newer versions may cause issues with Linux)
+- **Payload:** **Goldhen v2.4b18.7** or lower (Newer versions may cause issues with Linux)
 - **Sources:**
   - [GoldHEN GitHub](https://github.com/GoldHEN/GoldHEN/releases/tag/2.4b17.3)
   - [Ko-fi (GoldHEN)](https://ko-fi.com/s/5d29f9e29c)
