@@ -1,9 +1,13 @@
-BENCHMARKS:
+# Benchmarks
 
-1. Geekbench 6.5.0:
-https://browser.geekbench.com/v6/cpu/16758539
+## 1. Geekbench 6.5.0
+- Link: https://browser.geekbench.com/v6/cpu/16758539
 
-2. Glmark2:
+---
+
+## 2. Glmark2 2023.1
+
+```bash
 ❯ glmark2
 =======================================================
     glmark2 2023.01
@@ -50,11 +54,15 @@ https://browser.geekbench.com/v6/cpu/16758539
 [loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 5200 FrameTime: 0.192 ms
 =======================================================
                                   glmark2 Score: 4079
-=======================================================
+=======================================================```
 
-3. KDiskMark:
-                        KDiskMark (3.2.0): https://github.com/JonMagon/KDiskMark
-                    Flexible I/O Tester (fio-3.39): https://github.com/axboe/fio
+---
+
+# 3. KDiskMark 3.2.0
+
+```bash
+KDiskMark (3.2.0): https://github.com/JonMagon/KDiskMark
+Flexible I/O Tester (fio-3.39): https://github.com/axboe/fio
 --------------------------------------------------------------------------------
 * MB/s = 1,000,000 bytes/s [SATA/600 = 600,000,000 bytes/s]
 * KB = 1000 bytes, KiB = 1024 bytes
@@ -62,17 +70,17 @@ https://browser.geekbench.com/v6/cpu/16758539
 [Read]
 Sequential   1 MiB (Q=  8, T= 1):    50.851 MB/s [     49.7 IOPS] < 158255.28 us>
 Sequential   1 MiB (Q=  1, T= 1):    52.109 MB/s [     50.9 IOPS] < 20298.90 us>
-   Random   4 KiB (Q= 32, T= 1):     0.326 MB/s [     81.7 IOPS] < 391023.88 us>
-    Random   4 KiB (Q=  1, T= 1):     0.303 MB/s [     75.9 IOPS] < 13182.73 us>
+Random       4 KiB (Q= 32, T= 1):     0.326 MB/s [     81.7 IOPS] < 391023.88 us>
+Random       4 KiB (Q=  1, T= 1):     0.303 MB/s [     75.9 IOPS] < 13182.73 us>
 
 [Write]
 Sequential   1 MiB (Q=  8, T= 1):    85.271 MB/s [     83.3 IOPS] < 38704.24 us>
 Sequential   1 MiB (Q=  1, T= 1):    80.501 MB/s [     78.6 IOPS] <  4524.21 us>
-    Random   4 KiB (Q= 32, T= 1):    14.712 MB/s [   3678.0 IOPS] < 11072.93 us>
-    Random   4 KiB (Q=  1, T= 1):     0.960 MB/s [    240.0 IOPS] <    50.96 us>
+Random       4 KiB (Q= 32, T= 1):    14.712 MB/s [   3678.0 IOPS] < 11072.93 us>
+Random       4 KiB (Q=  1, T= 1):     0.960 MB/s [    240.0 IOPS] <    50.96 us>
 
 Profile: Default
-   Test: 1 GiB (x2) [Measure: 5 sec / Interval: 5 sec]
-   Date: 2026-02-26 16:29:06
-     OS: cachyos unknown [linux 5.15.15-obsidianx-1.0.0_release]
- Target: / 4% (31.72/748.08 GiB)
+Test: 1 GiB (x2) [Measure: 5 sec / Interval: 5 sec]
+Date: 2026-02-26 16:29:06
+OS: cachyos unknown [linux 5.15.15-obsidianx-1.0.0_release]
+Target: / 4% (31.72/748.08 GiB)
