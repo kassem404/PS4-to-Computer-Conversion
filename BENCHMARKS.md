@@ -1,11 +1,9 @@
-# Benchmarks
-
-## 1. Geekbench 6.5.0
+## Geekbench 6.5.0
 - Link: https://browser.geekbench.com/v6/cpu/16758539
 
 ---
 
-## 2. Glmark2 2023.1
+## Glmark2 2023.1
 
 ```bash
 ❯ glmark2
@@ -59,7 +57,7 @@
 
 ---
 
-## 3. KDiskMark 3.2.0
+## KDiskMark 3.2.0
 
 ```bash
 KDiskMark (3.2.0): https://github.com/JonMagon/KDiskMark
