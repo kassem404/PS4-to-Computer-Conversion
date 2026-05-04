@@ -1,37 +1,39 @@
 # PS4-to-Computer-Conversion
 A simple guide for converting a PS4 into a Computer running Linux.
 
-- This guide covers all PS4 Launch Edition (PS4 "Fat") models: CUH-10xxA, CUH-11xxA, CUH-11xxB, CUH-12xxA, and CUH-12xxB.
+- This guide covers all PS4 (Launch Edition / Fat) models: CUH-10xxA, CUH-11xxA, CUH-11xxB, CUH-12xxA, and CUH-12xxB.
 - Model used: CUH-1116A (Found on the bottom of the PS4)
-- Firmware version used: 11.52
 - This guide uses the **internal drive method**, which installs Linux into the PS4's main drive. The PS4's operating system will not be deleted and the system will be set up to dual-boot Linux.
-- **Requires** a keyboard and mouse (wired or wireless)
+- **Requires** a USB stick, keyboard and mouse (wired or wireless)
 
 ---
 
 ## **Step 1: Jailbreak the PS4 (Any method)**
-- **Payload:** Goldhen **v2.4b18.7** or lower (newer versions may cause issues with Linux)
-- **Sources:**
+- Payload used: Goldhen v2.4b18.7 (Avoid v2.4b18.8)
+- Sources:
   - This Repository [payload.bin](https://github.com/kassem404/PS4-to-Computer-Conversion/blob/main/payload.bin)
   - [Ko-fi (GoldHEN)](https://ko-fi.com/s/5d29f9e29c)
 
-- *Update: Issues seem to be fixed in the latest Goldhen version v2.4b18.9 or higher*
+---
 
+## **Step 2: Note down Software version and Southbridge version**
+- Found in PS4 Settings -> System -> System Information
+- Software version used: 11.52
+- Southbridge used: Aeolia
 
 ---
 
+## **Step 3: Enable Goldhen Server Settings**
+- Found in Goldhen Settings -> Server Settings ->
+  - Enable FTP Server
+  - Enable BinLoader Server
 
 
-
-
-
-## **Step 2: Download Payload Guest App**
-**Objective:** Install an app to load custom payloads.
-
-- **Sources:**
+## **Step 4: Download Payload Guest App**
+- Sources:
+  - This Repository [payload.bin](https://github.com/kassem404/PS4-to-Computer-Conversion/blob/main/payload.bin)
+  - Homebrew Store App on Jailbroken PS4
   - [PKG Zone (AZIF00003)](https://pkg-zone.com/details/AZIF00003)
-  - Homebrew Store (on Jailbroken PS4)
-  - This Repository
 
 ---
 
@@ -115,3 +117,6 @@ A simple guide for converting a PS4 into a Computer running Linux.
  | Installation freezes          | Wait 1-2 hours; check disk space                  |
  | No HDMI signal                | Do **not** unplug HDMI; restart PS4               |
  | LED strip not dark blue       | Force shutdown and retry                          |
+
+## Additional Resources:
+- Link: https://dionkill.github.io/ps4-linux-tutorial/postinstall.html
