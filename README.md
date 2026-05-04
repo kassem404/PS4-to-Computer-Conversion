@@ -39,7 +39,7 @@ A simple guide for converting a PS4 into a Computer running Linux
 
 ---
 
-## **Step 5: Download Linux Payloads**
+## **Step 5: Download Linux payloads**
 - Download all payloads to try out or just one if you know your needs (512mb is enough for non-gaming workflows)
 - Use at max the 1024mb Linux payload when booting Linux for the first time
 - Sources:
@@ -48,19 +48,19 @@ A simple guide for converting a PS4 into a Computer running Linux
 
 ---
 
-## **Step 6: Download kernel image**
+## **Step 6: Download initramfs**
+ - Sources:
+   - [MediaFire](https://www.mediafire.com/file/wziaiuqttxlwwgp/initramfs.zip/file)
+   - [GitHub](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip)
+
+---
+
+## **Step 7: Download kernel image**
 - Kernel bzImage used: 5.15.15-obsidianx-1.0.0_release
 - Sources:
   - This Repository [bzImage](https://github.com/kassem404/PS4-to-Computer-Conversion/blob/main/bzImage)
   - [GitHub](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.15.15__1.0.0)
   - [GitHub](https://github.com/rmuxnet/ps4-linux-12xx/releases)
-
----
-
-## **Step 7: Download initramfs**
- - Sources:
-   - [MediaFire](https://www.mediafire.com/file/wziaiuqttxlwwgp/initramfs.zip/file)
-   - [GitHub](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip)
 
 ---
 
@@ -72,9 +72,9 @@ A simple guide for converting a PS4 into a Computer running Linux
 
 ---
 
-## **Step 9: Creating directories**
+## **Step 9: Create directories**
 - Open PS4 Xplorer 2.0
-- You are by default in the `root` directory / folder
+- You are by default inside the `root` directory / folder
 - Enter `data` directory
 - Create a new directory called `payloads` (if it does not exist)
 - Go back to `root` directory
@@ -84,17 +84,26 @@ A simple guide for converting a PS4 into a Computer running Linux
 - Enter `user` directory
 - Enter `system` directory
 - Create a new directory called `boot` inside `system`
+- Close the App
 
 ---
 
-## **Step 10: Copying files from USB drive**
+## **Step 10: Copy files from USB drive**
+- Plug in USB drive into the PS4
 - Open PS4 Xplorer 2.0
+- You are by default inside the `root` directory / folder
+- Enter `mnt` directory then enter `usb0` directory where your files are stored
+- Copy Linux payloads from USB, follow this path: `root` -> `data` -> `payloads`, paste
+- Go back to `usb0` for copying
+- Copy iniramfs, follow this path: `root` -> `data` -> `linux` -> `boot`, paste
+- Go back to `usb0` for copying
+- Copy kernel bzImage, follow this path: `root` -> `data` -> `linux` -> `boot`, paste
+- Go back to `usb0` for copying
+- Copy Linux distro, follow this path: `root` -> `user` -> `system` -> `boot`, paste
 
+---
 
 ## XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-- Installation may take **1 hour or more** (less time with an internal SSD).
-- If nothing is displayed, try pressing **CTRL+ALT+F1**, **CTRL+ALT+F2**, or **CTRL+ALT+F7** repeatedly.
 
 
 ## **Step 5: Load the Linux Loader**
@@ -104,6 +113,7 @@ A simple guide for converting a PS4 into a Computer running Linux
 2. Select the Linux loader payload (e.g., `ps4-linux-loader.bin`).
 3. Wait for the loader to initialize (screen may go black for a few minutes).
 4. If the screen remains black, try pressing **CTRL+ALT+F1**, **CTRL+ALT+F2**, or **CTRL+ALT+F7** until the Linux console appears.
+5. Touch grass during the installation process which might take an hour or a bit more (less time with internal SSD).
 
 ---
 
