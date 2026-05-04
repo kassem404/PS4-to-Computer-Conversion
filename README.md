@@ -121,41 +121,28 @@ A simple guide for converting a PS4 into a Computer running Linux
 - Choose the 512mb Linux payload
 - Wait for the loader to initialize (screen may go black for a few minutes)
 - The PS4's LED strip should be blue with white pulses for a successful boot. If the LED is only white, the boot failed. Force shutdown by holding the power button for about 10 seconds and try again.
-- If you switch between monitor sources and / or lose video signal / display, simply press **Ctrl+Alt+F2** and then **Ctrl+Alt+F7** or **Ctrl+Alt+F1** (depends on which TTY your GUI is located in) to regain display.
+- If you switch between monitor sources and / or lose video signal / display, press **Ctrl+Alt+F2** and then **Ctrl+Alt+F7** or **Ctrl+Alt+F1** (depends on which TTY your GUI is located in) to regain display.
 - Plug in USB keyboard once the Linux shell is visible (displays `rescueshell / #`)
-- Type the command `install-linux-hdd.sh`
-- 
-
-## XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-
-## **Step 5: Load the Linux Loader**
-**Objective:** Boot the Linux loader from the PS4.
-
-3. Wait for the loader to initialize (screen may go black for a few minutes).
-4. If the screen remains black, try pressing **CTRL+ALT+F1**, **CTRL+ALT+F2**, or **CTRL+ALT+F7** until the Linux console appears.
-5. Touch grass during the installation process which might take an hour or a bit more (less time with internal SSD).
+- Type in the Linux shell `install-linux-hdd.sh` then press `Enter`
+- For allocating storage for the Linux partition, make sure to reserve space for the PS4's operating system which consumes about 100gb but its better to leave 150gb just to be safe. For a 1000gb drive, the maximum space to be set is 850gb.
+- Type in the shell `850` then press `Enter` (any amount should work depending on your needs & total drive size)
+- **The bigger the number you allocate, the longer it takes to boot for the first time only**
+- Wait for the installation process to finish. It might take 1 to 2 hours (less time with internal SSD and smaller allocated space).
+- If not booted to the Linux distro automatically then it will display the Linux shell again (displays `rescueshell / #`)
+- Type in the Linux shell `resume-boot` then press `Enter` (might need to be typed multiple times)
+- If stuck at a black screen, try unplugging then replugging the HDMI cable from both the console and the display, if issue persists; press **Ctrl+Alt+F2** and then **Ctrl+Alt+F7** or **Ctrl+Alt+F1**.
+- **Must** change DE Protocol from `X11` to `Wayland` in the bottom left corner before entering password since `X11` do not work on some distros. Keep `X11` if you want to try and prepared for a restart.
+- **CONGRATS!**
 
 ---
 
-## **Step 7: First Boot and Configuration**
-**Objective:** Boot into Linux and perform initial setup.
-
-1. After installation, select **Reboot** from the Linux loader menu.
-2. Use the **Payload Guest App** to load the Linux loader again.
-3. Log in with your credentials.
-4. Update the system:
-   ```bash
-   sudo apt update && sudo apt upgrade -y
-
----
-## Troubleshooting
-   **Issue**                     | **Solution**                                      |
- |-------------------------------|---------------------------------------------------|
- | Black screen after loading    | Try different TTYs (CTRL+ALT+F1-F7)               |
- | Installation freezes          | Wait 1-2 hours; check disk space                  |
- | No HDMI signal                | Do **not** unplug HDMI; restart PS4               |
- | LED strip not dark blue       | Force shutdown and retry                          |
-
-## Additional Resources:
+## Post Install Guide (contains other useful tips too)
 - Link: https://dionkill.github.io/ps4-linux-tutorial/postinstall.html
+
+## Common Issue - Bluetooth not working fix
+- Open Terminal / Konsole then type:
+``
+install bluez-obex
+sudo systemctl start bluetooth
+sudo systemctl enable bluetooth
+``
