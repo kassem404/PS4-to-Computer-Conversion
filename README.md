@@ -1,10 +1,10 @@
 # PS4-to-Computer-Conversion
-A simple guide for converting a PS4 into a Computer running Linux.
+A simple guide for converting a PS4 into a Computer running Linux
 
-- This guide covers all PS4 (Launch Edition / Fat) models: CUH-10xxA, CUH-11xxA, CUH-11xxB, CUH-12xxA, and CUH-12xxB.
+- This guide covers all PS4 (Launch Edition / Fat) models: CUH-10xxA, CUH-11xxA, CUH-11xxB, CUH-12xxA, and CUH-12xxB
 - Model used: CUH-1116A (Found on the bottom of the PS4)
 - This guide uses the **internal drive method**, which installs Linux into the PS4's main drive. The PS4's operating system will not be deleted and the system will be set up to dual-boot Linux.
-- **Requires** a USB stick, keyboard and mouse (wired or wireless)
+- **Requires** a Computer, USB drive in exFAT format, keyboard and mouse (wired or wireless)
 
 ---
 
@@ -12,11 +12,11 @@ A simple guide for converting a PS4 into a Computer running Linux.
 - Payload used: Goldhen v2.4b18.7 (Avoid v2.4b18.8)
 - Sources:
   - This Repository [payload.bin](https://github.com/kassem404/PS4-to-Computer-Conversion/blob/main/payload.bin)
-  - [Ko-fi (GoldHEN)](https://ko-fi.com/s/5d29f9e29c)
+  - [Ko-fi](https://ko-fi.com/s/5d29f9e29c) ***Must rename goldhen.bin to payload.bin***
 
 ---
 
-## **Step 2: Note down Software version and Southbridge version**
+## **Step 2: Note down Software & Southbridge versions**
 - Found in PS4 Settings -> System -> System Information
 - Software version used: 11.52
 - Southbridge used: Aeolia
@@ -24,21 +24,33 @@ A simple guide for converting a PS4 into a Computer running Linux.
 ---
 
 ## **Step 3: Enable Goldhen Server Settings**
-- Found in Goldhen Settings -> Server Settings ->
+- Found in Goldhen Settings -> Server Settings
   - Enable FTP Server
   - Enable BinLoader Server
 
+---
 
-## **Step 4: Download Payload Guest App**
+## **Step 4: Download PS4 Xplorer 2.0 & Payload Guest Apps**
 - Sources:
-  - This Repository [payload.bin](https://github.com/kassem404/PS4-to-Computer-Conversion/blob/main/payload.bin)
-  - Homebrew Store App on Jailbroken PS4
-  - [PKG Zone (AZIF00003)](https://pkg-zone.com/details/AZIF00003)
+  - Homebrew Store App on Jailbroken PS4 (if installed)
+  - [Payload Guest App](https://pkg-zone.com/details/AZIF00003)
+  - [PS4 Xplorer 2.0 App](https://pkg-zone.com/details/LAPY20009)
+- If installing from a computer; copy the file to a USB then plug it in the PS4 and open Goldhen -> Debug Settings -> Package Source -> Choose All -> Package Installer -> Install the Apps
 
 ---
 
-## **Step 3: Transfer Linux Files to PS4**
-**Objective:** Move Linux image and loader to your PS4.
+## **Step 5: Download Linux Payloads**
+- Download all payloads or just one (if you know what you want)
+- Use the 1024mb payload or smaller when booting Linux for the first time only
+- Sources:
+  - [GitHub](https://github.com/ArabPixel/ps4-linux-payloads/releases) ***Must use .elf files & rename to .bin***
+
+---
+
+## **Step 6: Open PS4 Xplorer 2.0 App**
+- Enter into `data` directory
+
+---
 
 ### **Option 1: Using FileZilla (Recommended)**
 1. Download and install [FileZilla](https://filezilla-project.org/download.php) on your PC.
