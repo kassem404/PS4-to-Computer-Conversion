@@ -94,3 +94,12 @@ Converting a PS4 into a Computer running Linux: A Simple Guide
 4. Update the system:
    ```bash
    sudo apt update && sudo apt upgrade -y
+
+---
+## Troubleshooting
+   **Issue**                     | **Solution**                                      |
+ |-------------------------------|---------------------------------------------------|
+ | Black screen after loading    | Try different TTYs (CTRL+ALT+F1-F7)               |
+ | Installation freezes          | Wait 1-2 hours; check disk space                  |
+ | No HDMI signal                | Do **not** unplug HDMI; restart PS4               |
+ | LED strip not dark blue       | Force shutdown and retry                          |
