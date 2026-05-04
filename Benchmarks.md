@@ -54,11 +54,12 @@
 [loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 5200 FrameTime: 0.192 ms
 =======================================================
                                   glmark2 Score: 4079
-=======================================================```
+=======================================================
+```
 
 ---
 
-# 3. KDiskMark 3.2.0
+## 3. KDiskMark 3.2.0
 
 ```bash
 KDiskMark (3.2.0): https://github.com/JonMagon/KDiskMark
@@ -84,3 +85,4 @@ Test: 1 GiB (x2) [Measure: 5 sec / Interval: 5 sec]
 Date: 2026-02-26 16:29:06
 OS: cachyos unknown [linux 5.15.15-obsidianx-1.0.0_release]
 Target: / 4% (31.72/748.08 GiB)
+```
