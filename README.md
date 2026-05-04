@@ -61,26 +61,13 @@ A simple guide for converting a PS4 into a Computer running Linux
 
 ### **Step 7: Download kernel image**
 - Kernel bzImage used: 5.15.15-obsidianx-1.0.0_release
-- Source:
+- Sources:
   - [GitHub](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.15.15__1.0.0)
+  - [GitHub](https://github.com/rmuxnet/ps4-linux-12xx/releases) ***Use General not ***
 
 - Installation may take **1 hour or more** (less time with an internal SSD).
 - If nothing is displayed, try pressing **CTRL+ALT+F1**, **CTRL+ALT+F2**, or **CTRL+ALT+F7** repeatedly.
 
-
-## **Step 4: Prepare the Linux Image**
-**Objective:** Download a compatible Linux distribution for PS4.
-
-- **Recommended Distros:**
-  - Ubuntu 20.04 LTS
-  - Debian 11
-  - Fedora
-- **Sources:**
-  - [PS4 Linux Loader GitHub](https://github.com/fail0verflow/ps4-linux)
-  - [PSXHax Forum](https://www.psxhax.com/threads/ps4-linux-loader.5802/)
-- **Important:** Use **PS4-specific images** (`.img.gz` or `.iso`). Generic x86_64 ISOs will **not** work.
-
----
 
 ## **Step 5: Load the Linux Loader**
 **Objective:** Boot the Linux loader from the PS4.
